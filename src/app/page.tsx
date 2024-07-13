@@ -8,7 +8,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col justify-between p-20 overflow-y-scroll">
-      <div className="flex justify-center items-center space-x-40">
+      <div className="flex justify-center items-center space-x-40 pb-20">
         <div className="image-rounded-full">
           <Image
             className="rounded-full"
@@ -68,8 +68,8 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="flex justify-start items-start flex-col pb-10">
-        <div className="flex justify-start font-bold text-3xl">
+      <div className="flex justify-start items-start flex-col pb-20">
+        <div className="flex font-bold text-3xl">
           <h1>About Me</h1>
         </div>
         <div className="flex justify-start font-light text-lg">
@@ -86,7 +86,7 @@ export default function Home() {
               Symbotic
             </a>
             , a robotics automation company. I am also currently serving as a
-            core organizer of 
+            core organizer of
             <a
               className="font-bold text-blue-500"
               href="https://hackbeanpot.com/"
@@ -94,9 +94,9 @@ export default function Home() {
             >
               {" "}
               HackBeanpot
-            </a>, a 501c(3) non-profit and one of the
-            biggest Boston hackathons with an 11-year track record organized by
-            students at 
+            </a>
+            , a 501c(3) non-profit and one of the biggest Boston hackathons with
+            an 11-year track record organized by students at
             <a
               className="font-bold text-blue-500"
               href="https://northeastern.edu"
@@ -104,17 +104,19 @@ export default function Home() {
             >
               {" "}
               Northeastern University
-            </a>. I am seeking to apply both my
-            previous work and academic experience to developing software that
-            will make a difference, and I would be more than happy to connect
-            and discuss any opportunities!
+            </a>
+            . I am seeking to apply both my previous work and academic
+            experience to developing software that will make a difference, and I
+            would be more than happy to connect and discuss any opportunities!
           </p>
         </div>
       </div>
-      <div className="flex justify-start items-start flex-col space-y-10 pb-10">
-        <div className="flex justify-start font-bold text-3xl">
+      <div className="flex justify-center items-center flex-col space-y-10 pb-10">
+        <div className="flex font-bold text-3xl">
           <h1>Experiences</h1>
         </div>
+      </div>
+      <div className="flex justify-start flex-col space-y-10 pb-20">
         <div className="flex justify-start flex-row space-x-10">
           <div className="flex-grow-0 flex-shrink-0">
             <a href="https://www.symbotic.com/" target="_blank">
@@ -132,6 +134,13 @@ export default function Home() {
             <div className="flex justify-start font-normal text-base italic">
               <p>May 2024 - Present</p>
             </div>
+              <ul className="flex flex-row space-x-2">
+                <li className="rounded-full bg-auto bg-black text-white font-light text-sm py-1 px-4">C#</li>
+                <li className="rounded-full bg-auto bg-black text-white font-light text-sm py-1 px-4">Python</li>
+                <li className="rounded-full bg-auto bg-black text-white font-light text-sm py-1 px-4">Git</li>
+                <li className="rounded-full bg-auto bg-black text-white font-light text-sm py-1 px-4">Docker</li>
+                <li className="rounded-full bg-auto bg-black text-white font-light text-sm py-1 px-4">Kubernetes</li>
+              </ul>
             <div className="flex justify-start font-normal text-base">
               <p>
                 Current Software Engineer Intern on the Symbotic Fleet
@@ -157,6 +166,12 @@ export default function Home() {
             <div className="flex justify-start font-normal text-base italic">
               <p>January 2023 - June 2023</p>
             </div>
+            <ul className="flex flex-row space-x-2">
+                <li className="rounded-full bg-auto bg-black text-white font-light text-sm py-1 px-4">React</li>
+                <li className="rounded-full bg-auto bg-black text-white font-light text-sm py-1 px-4">Python</li>
+                <li className="rounded-full bg-auto bg-black text-white font-light text-sm py-1 px-4">Git</li>
+                <li className="rounded-full bg-auto bg-black text-white font-light text-sm py-1 px-4">SQL</li>
+              </ul>
             <div className="flex justify-start font-normal text-base">
               <ul>
                 <li>
@@ -180,8 +195,9 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="flex justify-start items-start flex-col space-y-10 pb-10">
-        <div className="flex justify-start font-bold text-3xl">
+
+      <div className="flex justify-start items-center flex-col space-y-10 pb-20">
+        <div className="flex justify-start items-center font-bold text-3xl">
           <h1>Projects</h1>
         </div>
         <div className="flex justify-start flex-row space-x-10">
@@ -196,6 +212,13 @@ export default function Home() {
             <div className="flex justify-start font-normal text-base italic">
               <p>February 2024</p>
             </div>
+            <ul className="flex flex-row space-x-2">
+                <li className="rounded-full bg-auto bg-black text-white font-light text-sm py-1 px-4">React Native</li>
+                <li className="rounded-full bg-auto bg-black text-white font-light text-sm py-1 px-4">Typescript</li>
+                <li className="rounded-full bg-auto bg-black text-white font-light text-sm py-1 px-4">Git</li>
+                <li className="rounded-full bg-auto bg-black text-white font-light text-sm py-1 px-4">Google Firebase</li>
+                <li className="rounded-full bg-auto bg-black text-white font-light text-sm py-1 px-4">Expo</li>
+              </ul>
             <div className="flex justify-start font-normal text-base">
               <p>
                 Best overall winner of the
@@ -231,6 +254,13 @@ export default function Home() {
             <div className="flex justify-start font-normal text-base italic">
               <p>May 2024</p>
             </div>
+            <ul className="flex flex-row space-x-2">
+                <li className="rounded-full bg-auto bg-black text-white font-light text-sm py-1 px-4">Java</li>
+                <li className="rounded-full bg-auto bg-black text-white font-light text-sm py-1 px-4">Spring Boot</li>
+                <li className="rounded-full bg-auto bg-black text-white font-light text-sm py-1 px-4">Git</li>
+                <li className="rounded-full bg-auto bg-black text-white font-light text-sm py-1 px-4">PostgreSQL</li>
+                <li className="rounded-full bg-auto bg-black text-white font-light text-sm py-1 px-4">Postman</li>
+              </ul>
             <div className="flex justify-start font-normal text-base">
               <p>
                 Designed a todo list application in Java that handles HTTP
@@ -253,13 +283,86 @@ export default function Home() {
             <div className="flex justify-start font-normal text-base italic">
               <p>November 2023</p>
             </div>
+            <ul className="flex flex-row space-x-2">
+                <li className="rounded-full bg-auto bg-black text-white font-light text-sm py-1 px-4">C</li>
+                <li className="rounded-full bg-auto bg-black text-white font-light text-sm py-1 px-4">Vim</li>
+                <li className="rounded-full bg-auto bg-black text-white font-light text-sm py-1 px-4">Git</li>
+                <li className="rounded-full bg-auto bg-black text-white font-light text-sm py-1 px-4">Linux</li>
+                <li className="rounded-full bg-auto bg-black text-white font-light text-sm py-1 px-4">Makefile</li>
+              </ul>
             <div className="flex justify-start font-normal text-base">
               <p>
-              Developed a file system driver in C that mounts a 1024-kilobyte disk image as a filesystem,
-              allowing users to add, delete, and modify files and directories in a Linux environment. 
+                Developed a file system driver in C that mounts a 1024-kilobyte
+                disk image as a filesystem, allowing users to add, delete, and
+                modify files and directories in a Linux environment.
               </p>
             </div>
           </div>
+        </div>
+      </div>
+      <div className="flex justify-center items-center flex-col">
+        <div className="flex justify-center items-center font-bold text-3xl">
+          <h1>Skills</h1>
+        </div>
+        <div className="flex flex-row items-center space-x-10">
+          <Image
+            className="rounded-none"
+            src="/java.jpg"
+            alt="Java Logo"
+            width={200}
+            height={200}
+          />
+          <Image
+            className="rounded-none"
+            src="/python.png"
+            alt="Python Logo"
+            width={200}
+            height={200}
+          />
+          <Image
+            className="rounded-none"
+            src="/csharp.png"
+            alt="CSharp Logo"
+            width={200}
+            height={200}
+          />
+          <Image
+            className="rounded-none"
+            src="/javascript.webp"
+            alt="Javascript Logo"
+            width={200}
+            height={200}
+          />
+        </div>
+          <div className="flex flex-row items-center space-x-10"> 
+            <Image
+            className="rounded-none"
+            src="/typescript.png"
+            alt="Typescript Logo"
+            width={200}
+            height={200}
+          />
+          <Image
+            className="rounded-none"
+            src="/mysql.svg"
+            alt="MySQL Logo"
+            width={200}
+            height={200}
+          />
+          <Image
+            className="rounded-none"
+            src="/html.png"
+            alt="HTML Logo"
+            width={200}
+            height={200}
+          />
+          <Image
+            className="rounded-none"
+            src="/css.png"
+            alt="CSS Logo"
+            width={200}
+            height={200}
+          />
         </div>
       </div>
     </main>
