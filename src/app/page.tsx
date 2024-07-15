@@ -1,5 +1,7 @@
+'use client';
 import Image from "next/image";
 import Link from "next/link";
+import Skills from "./skills";
 
 /**
  * Top level component for the home page
@@ -300,71 +302,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="flex justify-center items-center flex-col">
-        <div className="flex justify-center items-center font-bold text-3xl">
-          <h1>Skills</h1>
-        </div>
-        <div className="flex flex-row items-center space-x-10">
-          <Image
-            className="rounded-none"
-            src="/java.jpg"
-            alt="Java Logo"
-            width={200}
-            height={200}
-          />
-          <Image
-            className="rounded-none"
-            src="/python.png"
-            alt="Python Logo"
-            width={200}
-            height={200}
-          />
-          <Image
-            className="rounded-none"
-            src="/csharp.png"
-            alt="CSharp Logo"
-            width={200}
-            height={200}
-          />
-          <Image
-            className="rounded-none"
-            src="/javascript.webp"
-            alt="Javascript Logo"
-            width={200}
-            height={200}
-          />
-        </div>
-          <div className="flex flex-row items-center space-x-10"> 
-            <Image
-            className="rounded-none"
-            src="/typescript.png"
-            alt="Typescript Logo"
-            width={200}
-            height={200}
-          />
-          <Image
-            className="rounded-none"
-            src="/mysql.svg"
-            alt="MySQL Logo"
-            width={200}
-            height={200}
-          />
-          <Image
-            className="rounded-none"
-            src="/html.png"
-            alt="HTML Logo"
-            width={200}
-            height={200}
-          />
-          <Image
-            className="rounded-none"
-            src="/css.png"
-            alt="CSS Logo"
-            width={200}
-            height={200}
-          />
-        </div>
-      </div>
+      <Skills/>
     </main>
   );
 }
