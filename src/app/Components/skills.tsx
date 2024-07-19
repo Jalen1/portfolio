@@ -1,33 +1,37 @@
-import Image from "next/image";
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 /** To be referenced when skillState is 0. */
 function LanguageBox() {
   return (
     <div className="flex flex-col">
       <div className="flex flex-row items-center space-x-10">
-        <Image
+         <motion.img
+          whileHover={{scale : 1.2}}
           className="rounded-none"
           src="/java.jpg"
           alt="Java Logo"
           width={200}
           height={200}
         />
-        <Image
+         <motion.img
+          whileHover={{scale : 1.2}}
           className="rounded-none"
           src="/python.png"
           alt="Python Logo"
           width={200}
           height={200}
         />
-        <Image
+         <motion.img
+          whileHover={{scale : 1.2}}
           className="rounded-none"
           src="/csharp.png"
           alt="CSharp Logo"
           width={200}
           height={200}
         />
-        <Image
+         <motion.img
+          whileHover={{scale : 1.2}}
           className="rounded-none"
           src="/javascript.webp"
           alt="Javascript Logo"
@@ -36,28 +40,32 @@ function LanguageBox() {
         />
       </div>
       <div className="flex flex-row items-center space-x-10">
-        <Image
+         <motion.img
+          whileHover={{scale : 1.2}}
           className="rounded-none"
           src="/typescript.png"
           alt="Typescript Logo"
           width={200}
           height={200}
         />
-        <Image
+         <motion.img
+          whileHover={{scale : 1.2}}
           className="rounded-none"
           src="/mysql.svg"
           alt="MySQL Logo"
           width={200}
           height={200}
         />
-        <Image
+         <motion.img
+          whileHover={{scale : 1.2}}
           className="rounded-none"
           src="/html.png"
           alt="HTML Logo"
           width={200}
           height={200}
         />
-        <Image
+         <motion.img
+          whileHover={{scale : 1.2}}
           className="rounded-none"
           src="/css.png"
           alt="CSS Logo"
@@ -74,28 +82,32 @@ function FrameworkBox() {
   return (
     <div className="flex flex-col">
       <div className="flex flex-row items-center space-x-10">
-        <Image
+        <motion.img
+          whileHover={{scale : 1.2}}
           className="rounded-none"
           src="/react.png"
           alt="React Logo"
           width={200}
           height={200}
         />
-        <Image
+         <motion.img
+          whileHover={{scale : 1.2}}
           className="rounded-none"
           src="/tailwind.png"
           alt="Tailwind Logo"
           width={200}
           height={200}
         />
-        <Image
+         <motion.img
+          whileHover={{scale : 1.2}}
           className="rounded-none"
           src="/git.png"
           alt="Git Logo"
           width={200}
           height={200}
         />
-        <Image
+         <motion.img
+          whileHover={{scale : 1.2}}
           className="rounded-none"
           src="/node.png"
           alt="Node Logo"
@@ -104,28 +116,32 @@ function FrameworkBox() {
         />
       </div>
       <div className="flex flex-row items-center space-x-10">
-        <Image
+         <motion.img
+          whileHover={{scale : 1.2}}
           className="rounded-none"
           src="/next.png"
           alt="Next Logo"
           width={200}
           height={200}
         />
-        <Image
+         <motion.img
+          whileHover={{scale : 1.2}}
           className="rounded-none"
           src="/spring.png"
           alt="Java Spring Logo"
           width={200}
           height={200}
         />
-        <Image
+         <motion.img
+          whileHover={{scale : 1.2}}
           className="rounded-none"
           src="/express.png"
           alt="Express Logo"
           width={200}
           height={200}
         />
-        <Image
+         <motion.img
+          whileHover={{scale : 1.2}}
           className="rounded-none"
           src="/jest.png"
           alt="Jest Logo"
@@ -142,28 +158,32 @@ function SoftwareBox() {
   return (
     <div className="flex flex-col">
       <div className="flex flex-row items-center space-x-10">
-        <Image
+         <motion.img
+          whileHover={{scale : 1.2}}
           className="rounded-none"
           src="/docker.png"
           alt="Docker Logo"
           width={200}
           height={200}
         />
-        <Image
+         <motion.img
+          whileHover={{scale : 1.2}}
           className="rounded-none"
           src="/expo.png"
           alt="Expo Logo"
           width={200}
           height={200}
         />
-        <Image
+         <motion.img
+          whileHover={{scale : 1.2}}
           className="rounded-none"
           src="/kubernetes.png"
           alt="Kubernetes Logo"
           width={200}
           height={200}
         />
-        <Image
+         <motion.img
+          whileHover={{scale : 1.2}}
           className="rounded-none"
           src="/postgres.png"
           alt="Postgres Logo"
@@ -172,28 +192,32 @@ function SoftwareBox() {
         />
       </div>
       <div className="flex flex-row items-center space-x-10">
-        <Image
+         <motion.img
+          whileHover={{scale : 1.2}}
           className="rounded-none"
           src="/postman.webp"
           alt="Postman Logo"
           width={200}
           height={200}
         />
-        <Image
+         <motion.img
+          whileHover={{scale : 1.2}}
           className="rounded-none"
           src="/vscode.webp"
           alt="VSCode Logo"
           width={200}
           height={200}
         />
-        <Image
+         <motion.img
+          whileHover={{scale : 1.2}}
           className="rounded-none"
-            src="/jira.png"
+            src="/framer.svg"
           alt="Jira Logo"
           width={200}
           height={200}
         />
-        <Image
+         <motion.img
+          whileHover={{scale : 1.2}}
           className="rounded-none"
           src="/firebase.png"
           alt="Firebase Logo"
@@ -216,66 +240,75 @@ function ToggleBar({
     <>
       {currSkillState === 0 ? (
         <div className="flex items-center align-middle justify-center flex-row py-10 space-x-10">
-          <button
+           <motion.button
+          whileHover={{scale : 1.2}} 
             className="rounded-full bg-center bg-auto bg-black text-white font-bold text-xl py-1 px-4"
             onClick={onLanguage}
           >
             Languages
-          </button>
-          <button
+          </motion.button>
+           <motion.button
+          whileHover={{scale : 1.2}}
             className="rounded-full bg-auto border-black border-2 text-black font-bold text-xl py-1 px-4 "
             onClick={onFramework}
           >
             Frameworks
-          </button>
-          <button
+          </motion.button>
+           <motion.button
+          whileHover={{scale : 1.2}}
             className="rounded-full bg-auto border-black border-2 text-black font-bold text-xl py-1 px-4"
             onClick={onSoftware}
           >
             Software
-          </button>
+          </motion.button>
         </div>
       ) : currSkillState === 1 ? (
         <div className="flex items-center align-middle justify-center flex-row py-10 space-x-10">
-          <button
+           <motion.button
+          whileHover={{scale : 1.2}}
             className="rounded-full bg-center bg-auto border-black border-2 text-black font-bold text-xl py-1 px-4"
             onClick={onLanguage}
           >
             Languages
-          </button>
-          <button
+          </motion.button>
+           <motion.button
+          whileHover={{scale : 1.2}}
             className="rounded-full bg-auto  bg-black text-white font-bold text-xl py-1 px-4 "
             onClick={onFramework}
           >
             Frameworks
-          </button>
-          <button
+          </motion.button>
+           <motion.button
+          whileHover={{scale : 1.2}}
             className="rounded-full bg-auto border-black border-2 text-black font-bold text-xl py-1 px-4"
             onClick={onSoftware}
           >
             Software
-          </button>
+          </motion.button>
         </div>
       ) : (
         <div className="flex items-center align-middle justify-center flex-row py-10 space-x-10">
-          <button
+           <motion.button
+          whileHover={{scale : 1.2}}
             className="rounded-full bg-auto border-black border-2 text-black font-bold text-xl py-1 px-4 "
             onClick={onLanguage}
           >
             Languages
-          </button>
-          <button
+          </motion.button>
+           <motion.button
+          whileHover={{scale : 1.2}}
             className="rounded-full bg-auto border-black border-2 text-black font-bold text-xl py-1 px-4 "
             onClick={onFramework}
           >
             Frameworks
-          </button>
-          <button
+          </motion.button>
+           <motion.button
+          whileHover={{scale : 1.2}}
             className="rounded-full bg-auto  bg-black text-white font-bold text-xl py-1 px-4 "
             onClick={onSoftware}
           >
             Software
-          </button>
+          </motion.button>
         </div>
       )}
 
@@ -304,7 +337,12 @@ export default function Skills() {
    */
   return (
     <>
-      <div className="flex justify-center items-center font-bold text-3xl flex-col">
+      <motion.div initial = {{ opacity : 0 , x : -200}}
+      whileInView = {{ opacity : 1 , x : 0 }}
+      transition = {{ duration : 1 , delay : 0.5}}
+      viewport = {{ once: true }}
+      className="flex justify-center items-center font-bold text-3xl flex-col"
+      >
         <h1>Skills</h1>
         <ToggleBar
           currSkillState={skillState}
@@ -318,7 +356,7 @@ export default function Skills() {
             setSkillState(2);
           }}
         />
-      </div>
+      </motion.div>
     </>
   );
 }
