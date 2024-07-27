@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 /** To be referenced when skillState is 0. */
 function LanguageBox() {
   return (
-    <div className="flex flex-col pb-48">
+    <div className="flex flex-col">
       <div className="flex flex-row items-center space-x-10">
          <motion.img
           whileHover={{scale : 1.2}}
@@ -33,10 +33,11 @@ function LanguageBox() {
          <motion.img
           whileHover={{scale : 1.2}}
           className="rounded-none"
-          src="/javascript.webp"
+          src="/JavaScript-logo.png"
           alt="Javascript Logo"
           width={200}
-          height={200}
+          height={200} 
+          
         />
       </div>
       <div className="flex flex-row items-center space-x-10">
@@ -337,11 +338,11 @@ export default function Skills() {
    */
   return (
     <>
-      <motion.div initial = {{ opacity : 0 , x : -200}}
+      <motion.div initial = {{ opacity : 0 , x : 400}}
       whileInView = {{ opacity : 1 , x : 0 }}
-      transition = {{ duration : 1 , delay : 0.5}}
+      transition = {{ duration : 0.5 , delay : 0.25}}
       viewport = {{ once: true }}
-      className="flex justify-center items-center font-bold text-3xl flex-col"
+      className="flex justify-center items-center font-bold text-3xl flex-col p-24 bg-burnt_sienna-700 rounded-3xl relative"
       id="Skills"
       >
         <h1>Skills</h1>

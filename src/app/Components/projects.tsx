@@ -5,12 +5,12 @@ import { motion } from "framer-motion";
 export default function Projects() {
   return (
       <motion.div
-      initial={{ opacity: 0, x: 200 }}
+      initial={{ opacity: 0, x: -400 }}
       whileInView={{ opacity: 1, x: 0 }}
-      transition={{ duration: 1, delay: 1.15}}
+      transition={{ duration: 0.5, delay: 0.25}}
       viewport={{ once: true }}
       id="Projects"
-      className="flex justify-start items-center flex-col space-y-10 pb-20"
+      className="flex justify-start items-center flex-col space-y-10 bg-cambridge_blue-700 rounded-3xl p-20 relative"
     >
       <div className="flex justify-start items-center font-bold text-3xl">
         <h1>Projects</h1>

@@ -5,9 +5,9 @@ import { motion } from "framer-motion";
 export default function Title() {
   return (
     <motion.div
-      className="flex justify-center items-center space-x-40 pb-48"
-      initial={{ opacity: 0, x: 150 }}
-      transition={{ duration: 1.75, delay: 0.25, ease: "easeOut", type : "spring", bounce : 0.25 }}
+      className="flex justify-center items-center space-x-40 pb-48 pt-24 bg-cambridge_blue-700 rounded-3xl relative"
+      initial={{ opacity: 0, x: 200 }}
+      transition={{ duration: 1.25, delay: 0.15, ease: "easeOut", type : "spring", bounce : 0.25 }}
       whileInView={{ opacity: 1, x: 0 }}
       viewport={{ once: true }}
     >
@@ -73,7 +73,7 @@ export default function Title() {
         
         <motion.div whileHover={{scale : 1.1, x : 0}} className="pt-2">
           <a
-            className="rounded-full bg-center bg-auto bg-black text-white font-light text-l py-1 px-4"
+            className="rounded-full bg-center bg-black text-white font-light text-l py-1 px-4"
             href="/resume.pdf"
             target="_blank"
           >

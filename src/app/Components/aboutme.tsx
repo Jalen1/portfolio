@@ -8,12 +8,13 @@ export default function AboutMe() {
     return(
         <motion.div
         initial={{ opacity: 0, x: -200 }}
-        transition={{ duration: 1.5, delay: 0.5 }}
         whileInView={{ opacity: 1, x: 200 }}
+        transition={{ duration: 0.5, delay: 0.25 }}
         viewport={{ once: true }}
-        className="flex justify-center items-center flex-col pb-20 max-w-3xl"
+        className="flex justify-center items-center flex-col p-20 max-w-3xl relative -z-50 bg-prussian_blue-900 rounded-3xl"
       >
-        <div className="flex font-bold text-3xl justify-center pb-4" id="About">
+        <div className="flex font-bold text-3xl justify-center pb-4"
+        id="About">
           <h1>About Me</h1>
         </div>
         <div className="flex justify-center font-light text-lg">
