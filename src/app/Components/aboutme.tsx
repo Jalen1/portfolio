@@ -11,7 +11,7 @@ export default function AboutMe() {
         whileInView={{ opacity: 1, x: 200 }}
         transition={{ duration: 0.5, delay: 0.25 }}
         viewport={{ once: true }}
-        className="flex justify-center items-center flex-col p-20 max-w-3xl relative -z-50 bg-prussian_blue-900 rounded-3xl"
+        className="flex justify-center items-center flex-col p-20 max-w-3xl relative -z-50 bg-ucla_blue-700 rounded-3xl shadow-2xl"
       >
         <div className="flex font-bold text-3xl justify-center pb-4"
         id="About">

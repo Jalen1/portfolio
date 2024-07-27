@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Experiences() {
   return (
     <motion.div
-      className="bg-oxford_blue-900 rounded-3xl p-20 space-y-10"
+      className="bg-cambridge_blue-700 rounded-3xl p-20 space-y-10 shadow-2xl"
       id="Experiences"
       initial={{ opacity: 0, x: 200 }}
       whileInView={{ opacity: 1, x: 0 }}
