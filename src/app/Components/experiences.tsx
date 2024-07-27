@@ -2,29 +2,28 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-
 export default function Experiences() {
-
-    return(
-        <motion.div id="Experiences">
-        <motion.div
-        initial={{ opacity: 0, x: 200 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1, delay: 0.75 }}
-        viewport={{ once: true }}
-        className="flex justify-center items-center flex-col space-y-10 pb-10"
+  return (
+    <motion.div
+      className="bg-oxford_blue-900 rounded-3xl p-20 space-y-10"
+      id="Experiences"
+      initial={{ opacity: 0, x: 200 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.5 , delay: 0.5 }}
+      viewport={{ once: true }}
+    >
+      <div
+        className="flex justify-center items-center flex-col space-y-10 pb-10 font-bold text-3xl"
       >
-        <div className="flex font-bold text-3xl">
           <h1>Experiences</h1>
-        </div>
-      </motion.div>
-      <motion.div
+      </div>
+      {/* <motion.div
         initial={{ opacity: 0, x: -200 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, delay: 1 }}
         viewport={{ once: true }}
-        className="flex justify-start flex-col space-y-10 pb-20"
-      >
+        className="flex justify-start flex-col space-y-10"
+      > */}
         <div className="flex justify-start flex-row space-x-10">
           <div className="flex-grow-0 flex-shrink-0">
             <Link href="https://www.symbotic.com/" target="_blank">
@@ -120,9 +119,7 @@ export default function Experiences() {
             </div>
           </div>
         </div>
-      </motion.div>
-      </motion.div>
-
-    )
-
+      {/* </motion.div> */}
+    </motion.div>
+  );
 }
