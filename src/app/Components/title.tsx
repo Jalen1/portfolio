@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export default function Title() {
   return (
     <motion.div
-      className="flex justify-center items-center space-x-40 pb-24"
+      className="flex justify-center items-center space-x-40 pb-48"
       initial={{ opacity: 0, x: 150 }}
       transition={{ duration: 1.75, delay: 0.25, ease: "easeOut", type : "spring", bounce : 0.25 }}
       whileInView={{ opacity: 1, x: 0 }}
