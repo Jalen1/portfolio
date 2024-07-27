@@ -9,7 +9,7 @@ export default function Projects() {
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 1, delay: 1.15}}
       viewport={{ once: true }}
-      id="projects"
+      id="Projects"
       className="flex justify-start items-center flex-col space-y-10 pb-20"
     >
       <div className="flex justify-start items-center font-bold text-3xl">

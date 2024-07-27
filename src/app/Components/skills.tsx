@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 /** To be referenced when skillState is 0. */
 function LanguageBox() {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col pb-48">
       <div className="flex flex-row items-center space-x-10">
          <motion.img
           whileHover={{scale : 1.2}}
@@ -342,6 +342,7 @@ export default function Skills() {
       transition = {{ duration : 1 , delay : 0.5}}
       viewport = {{ once: true }}
       className="flex justify-center items-center font-bold text-3xl flex-col"
+      id="Skills"
       >
         <h1>Skills</h1>
         <ToggleBar
