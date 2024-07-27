@@ -10,7 +10,7 @@ export default function Projects() {
       transition={{ duration: 0.5, delay: 0.25}}
       viewport={{ once: true }}
       id="Projects"
-      className="flex justify-start items-center flex-col space-y-10 bg-cambridge_blue-700 rounded-3xl p-20 relative"
+      className="flex justify-start items-center flex-col space-y-10 bg-cambridge_blue-700 rounded-3xl p-20 shadow-2xl relative"
     >
       <div className="flex justify-start items-center font-bold text-3xl">
         <h1>Projects</h1>

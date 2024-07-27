@@ -8,8 +8,20 @@ const config: Config = {
   ],
   theme: {
     colors: {
-      black : "black",
-      white : "white",
+      black: "black",
+      white: "white",
+      old_rose: {
+        DEFAULT: "#bb8588",
+        100: "#291718",
+        200: "#522e30",
+        300: "#7b4548",
+        400: "#a45d61",
+        500: "#bb8588",
+        600: "#c99ea0",
+        700: "#d6b7b8",
+        800: "#e4cfd0",
+        900: "#f1e7e7",
+      },
       oxford_blue: {
         DEFAULT: "#031d44",
         100: "#01060e",
@@ -21,6 +33,18 @@ const config: Config = {
         700: "#0a65ed",
         800: "#5797f8",
         900: "#abcbfb",
+      },
+      ucla_blue: {
+        DEFAULT: "#4d7298",
+        100: "#0f171f",
+        200: "#1f2e3d",
+        300: "#2e455c",
+        400: "#3e5c7a",
+        500: "#4d7298",
+        600: "#6a8fb4",
+        700: "#8fabc7",
+        800: "#b4c7d9",
+        900: "#dae3ec",
       },
       prussian_blue: {
         DEFAULT: "#04395e",

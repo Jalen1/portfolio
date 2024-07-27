@@ -342,7 +342,7 @@ export default function Skills() {
       whileInView = {{ opacity : 1 , x : 0 }}
       transition = {{ duration : 0.5 , delay : 0.25}}
       viewport = {{ once: true }}
-      className="flex justify-center items-center font-bold text-3xl flex-col p-24 bg-burnt_sienna-700 rounded-3xl relative"
+      className="flex justify-center items-center font-bold text-3xl flex-col p-24 bg-old_rose-700 shadow-2xl rounded-3xl relative"
       id="Skills"
       >
         <h1>Skills</h1>
